@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>input-geo3x3 tag</title>
+</head>
+<body>
+<h1>input-geo3x3 tag</h1>
+<script type="module" src=./input-geo3x3.js></script>
+
+<input-geo3x3 id=inpgeo3x3></input-geo3x3>
+<input id=resgeo3x3>
+<input id=inplat>
+<input id=inplng>
+<input id=inplevel>
+<button id=btn1>set Geo3x3</button>
+<button id=btn2>set [lat, lng]</button>
+<button id=btn3>set {lat, lng}</button>
+<hr>
+
+<script type="module">
+import { Geo3x3 } from "https://geo3x3.com/Geo3x3.js";
+
+onload = () => {
+  inpgeo3x3.onchange = () => {
+    resgeo3x3.value = inpgeo3x3.value;
+    const ll = Geo3x3.decode(inpgeo3x3.value);
+    inplat.value = ll.lat.toFixed(5);
+    inplng.value = ll.lng.toFixed(5);
+    inplevel.value = ll.level;
+  };
+  btn1.onclick = () => {
+    inpgeo3x3.value = "E91387397";
+  };
+  btn2.onclick = () => {
+    inpgeo3x3.value = [35.94352195669658, 136.18863701820376];
+  };
+  btn3.onclick = () => {
+    inpgeo3x3.value = { lat: 36.06521633161721, lng: 136.22171670198443 };
+  };
+};
+</script>
+
+<a href=https://github.com/code4fukui/input-geo3x3/>src on GitHub</a>
+</body>
+</html>
