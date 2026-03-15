@@ -1,5 +1,7 @@
 # input-geo3x3
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A custom web component that allows users to input geographic coordinates and display them in the Geo3x3 format.
 
 ## Demo
