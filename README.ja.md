@@ -1,9 +1,6 @@
 # input-geo3x3
 
-Geo3x3フォーマットの地理座標を入力できる入力フォームです。
-
-## デモ
-https://code4fukui.github.io/input-geo3x3/
+Geo3x3フォーマットの地理座標を入力できる入力フォームコンポーネントです。
 
 ## 機能
 - Geo3x3フォーマットの座標入力

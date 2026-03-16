@@ -32,4 +32,4 @@ inpgeo3x3.value = { lat: 36.06521633161721, lng: 136.22171670198443 };
 ```
 
 ## License
-MIT License
+MIT License — see [LICENSE](LICENSE).
